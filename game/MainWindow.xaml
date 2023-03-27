@@ -66,6 +66,12 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <StackPanel Background="Bisque" Grid.Column="1" Margin="440,0,0,0"/>
+        <StackPanel Background="Bisque" Grid.Column="1" Margin="440,0,0,0">
+            <TextBox Height="45">
+                
+            </TextBox>
+            </StackPanel>
+
+
     </Grid>
 </Window>
