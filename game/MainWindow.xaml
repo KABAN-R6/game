@@ -57,7 +57,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,350,0,4" Background="Brown" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="590">
+        <WrapPanel Margin="0,350,0,0" Background="Brown" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="597">
             <TextBlock Text="STEINBECK"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -66,11 +66,26 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <StackPanel Background="Bisque" Grid.Column="1" Margin="440,0,0,0">
-            <TextBox Height="45">
-                
+        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="434">
+            <ListBox x:Name="list1" Height="275" SelectionChanged="list1_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel MaxHeight="50" MaxWidth="50">
+                            <TextBlock Height="290" Width="289" Text="{Binding Name}">
+
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+
+            </ListBox>
+            <TextBox x:Name="txt1" Height="65">
+
             </TextBox>
-            </StackPanel>
+            <Button  Content="+" Height="50" Width="59" Click="Button_Click"/>
+        </StackPanel>
+
+
 
 
     </Grid>
