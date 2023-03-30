@@ -11,7 +11,7 @@
             <ColumnDefinition Width="155*"/>
             <ColumnDefinition Width="637*"/>
         </Grid.ColumnDefinitions>
-        <WrapPanel Background="Brown" Grid.ColumnSpan="2" Margin="0,0,202,354">
+        <WrapPanel Background="Brown" Grid.ColumnSpan="2" Margin="0,0,187,334">
             <TextBlock Text="Miss"  Width="195" Height="60" FontSize="20" >
 
             </TextBlock>
@@ -21,7 +21,7 @@
             <Button Content="400" Height="65" Width="75"/>
             <Button Content="500" Height="65" Width="75"/>
         </WrapPanel>
-        <WrapPanel Margin="0,70,202,284" Background="Brown" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,70,187,259" Background="Brown" Grid.ColumnSpan="2">
             <TextBlock Text="Words from planets"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -30,7 +30,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,140,202,214" Background="Brown" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,140,187,194" Background="Brown" Grid.ColumnSpan="2">
             <TextBlock  Text="The Knights templar"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -39,8 +39,8 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,210,202,144" Background="Brown" Grid.ColumnSpan="2">
-            <TextBlock Text="BIOLOGY"  Width="195" Height="60" FontSize="20" />
+        <WrapPanel Margin="0,210,187,124" Background="Brown" Grid.ColumnSpan="2">
+            <TextBlock Text="BIOLOGY"  Width="195" Height="63" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
             <Button Content="300" Height="65" Width="75"/>
@@ -48,7 +48,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,280,202,74" Background="Brown" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,280,187,59" Background="Brown" Grid.ColumnSpan="2">
             <TextBlock Text="MAKE IT SO "  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -57,7 +57,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,350,0,0" Background="Brown" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="597">
+        <WrapPanel Margin="0,350,0,0" Background="Brown" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="605">
             <TextBlock Text="STEINBECK"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -66,24 +66,31 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="434">
-            <ListBox x:Name="list1" Height="275" SelectionChanged="list1_SelectionChanged">
+        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="419">
+            
+            <ListBox x:Name="list1" Height="280" SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="197" SelectionMode="Multiple">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel MaxHeight="50" MaxWidth="50">
-                            <TextBlock Height="290" Width="289" Text="{Binding Name}">
+                            <TextBlock Height="290" Width="289" Text="{Binding Name}"/>
+                            <TextBlock Text="{Binding Point}">
 
                             </TextBlock>
+
+
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
 
-            </ListBox>
-            <TextBox x:Name="txt1" Height="65">
 
-            </TextBox>
+
+
+            </ListBox>
+
+            <TextBox x:Name="tx1" Height="65" TextChanged="tx1_TextChanged"/>
             <Button  Content="+" Height="50" Width="59" Click="Button_Click"/>
         </StackPanel>
+
 
 
 

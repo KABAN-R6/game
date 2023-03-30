@@ -27,7 +27,7 @@ namespace game
             InitializeComponent();
             players= new List<player>()
             {
-                new player("1", 0),
+                new player("1", 10),
                 new player("2", 0),
                 new player("3", 0),
 
@@ -42,19 +42,28 @@ namespace game
         }
         public void Update()
         {
-            
+            players = players.ToList();
             list1.ItemsSource = players;
             
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
-            
-                players.Add(new player(txt1.Text, 0));
-                Update();
-            
-            
+
+
+            if (tx1.Text == "" || tx1.Text == null)
+            {
+
+            }
+            players.Add(new player(tx1.Text, 0));
+            Update();
+
+
+        }
+
+        private void tx1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
