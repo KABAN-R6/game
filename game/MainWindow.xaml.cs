@@ -22,6 +22,7 @@ namespace game
     public partial class MainWindow : Window
     {
         List<player> players;
+        List<questions> quuestions;
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +34,13 @@ namespace game
 
             };
             Update();
+            quuestions = new List<questions>()
+            {
+                new questions("qfoqfepok[fe[qfe","1", 100),
+                
+
+            };
+           
 
         }
 
@@ -43,7 +51,7 @@ namespace game
         public void Update()
         {
             players = players.ToList();
-            list1.ItemsSource = players;
+            list2.ItemsSource = players;
             
         }
 
@@ -51,11 +59,11 @@ namespace game
         {
 
 
-            if (tx1.Text == "" || tx1.Text == null)
+            if (tx2.Text == "" || tx2.Text == null)
             {
 
             }
-            players.Add(new player(tx1.Text, 0));
+            players.Add(new player(tx2.Text, 0));
             Update();
 
 
@@ -68,7 +76,34 @@ namespace game
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            new 
+           b1.Visibility = Visibility.Collapsed;
+            
+           
+        }
+
+        private void b2_Click(object sender, RoutedEventArgs e)
+        {
+            b2.Visibility = Visibility.Collapsed;
+        }
+
+        private void b3_Click(object sender, RoutedEventArgs e)
+        {
+            b3.Visibility = Visibility.Collapsed;
+        }
+
+        private void b4_Click(object sender, RoutedEventArgs e)
+        {
+            b4.Visibility = Visibility.Collapsed;
+        }
+
+        private void b5_Click(object sender, RoutedEventArgs e)
+        {
+            b5.Visibility = Visibility.Collapsed;
+        }
+
+        private void vpr_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }

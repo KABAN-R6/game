@@ -5,23 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="692" Width="800">
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="155*"/>
             <ColumnDefinition Width="637*"/>
         </Grid.ColumnDefinitions>
-        <WrapPanel Background="Brown" Grid.ColumnSpan="2" Margin="0,0,187,334">
+        <WrapPanel Background="BurlyWood" Grid.ColumnSpan="2" Margin="0,0,187,334">
             <TextBlock Text="Miss"  Width="195" Height="60" FontSize="20" >
 
             </TextBlock>
-            <Button Content="100" Height="65" Width="75" Click="Button_Click_1"/>
-            <Button Content="200" Height="65" Width="75"/>
-            <Button Content="300" Height="65" Width="75"/>
-            <Button Content="400" Height="65" Width="75"/>
-            <Button Content="500" Height="65" Width="75"/>
+            <Button x:Name="b1" Content="100" Height="65" Width="75" Click="Button_Click_1"/>
+            <Button x:Name="b2" Content="200" Height="65" Width="75" Click="b2_Click"/>
+            <Button x:Name="b3" Content="300" Height="65" Width="75" Click="b3_Click"/>
+            <Button x:Name="b4"  Content="400" Height="65" Width="75" Click="b4_Click"/>
+            <Button x:Name="b5" Content="500" Height="65" Width="75" Click="b5_Click"/>
         </WrapPanel>
-        <WrapPanel Margin="0,70,187,259" Background="Brown" Grid.ColumnSpan="2">
+        <Border></Border>
+        <WrapPanel Margin="0,70,187,456" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock Text="Words from planets"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -30,7 +32,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,140,187,194" Background="Brown" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,140,187,194" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock  Text="The Knights templar"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -39,7 +41,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,210,187,124" Background="Brown" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,210,187,194" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock Text="BIOLOGY"  Width="195" Height="63" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -48,7 +50,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,280,187,59" Background="Brown" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,280,187,259" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock Text="MAKE IT SO "  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -57,25 +59,25 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,350,0,0" Background="Brown" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="605">
+        <WrapPanel Margin="0,350,0,146" Background="BurlyWood" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="605">
             <TextBlock Text="STEINBECK"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
             <Button Content="300" Height="65" Width="75"/>
             <Button Content="400" Height="65" Width="75"/>
             <Button Content="500" Height="65" Width="75"/>
+            <TextBlock Text="Вопрос" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
+            <TextBlock Text="Ответ" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
 
         </WrapPanel>
-        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="419">
+        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="616">
             <WrapPanel Height="275">
                 <ListBox Height="270" Width="195" x:Name="list1"  SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Right" HorizontalContentAlignment="Left"  SelectionMode="Multiple">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel MaxHeight="50" MaxWidth="50">
                                 <TextBlock Height="15" Width="15" Text="{Binding Name}"/>
-                                <TextBlock Height="15" Width="15"  Text="{Binding Point}">
-
-                                </TextBlock>
+                                <TextBlock Height="15" Width="15"  Text="{Binding Point}"/>
 
 
                             </StackPanel>
@@ -83,16 +85,50 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </WrapPanel>
-           
-               
 
 
 
 
-           
+
+
+
 
             <TextBox x:Name="tx1" Height="65" TextChanged="tx1_TextChanged"/>
             <Button  Content="+" Height="50" Width="59" Click="Button_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,470,0,0" HorizontalAlignment="Left" Width="595" Background="BurlyWood" Grid.ColumnSpan="2">
+            <TextBox  x:Name="vpr" Width="170" Margin="0,0,20,0">
+
+            </TextBox>
+            <TextBox x:Name="otv" Width="160"/>
+
+
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="661">
+            <WrapPanel Height="275">
+                <ListBox Height="246" Width="195" x:Name="list2"  SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Right" HorizontalContentAlignment="Left"  SelectionMode="Multiple">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel MaxHeight="50" MaxWidth="50">
+                                <TextBlock Height="15" Width="15" Text="{Binding Name}"/>
+                                <TextBlock Height="15" Width="15"  Text="{Binding Point}"/>
+
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </WrapPanel>
+
+
+
+
+
+
+
+
+            <TextBox x:Name="tx2" Height="65" TextChanged="tx1_TextChanged"/>
+            <Button  Content="+" Height="50" Click="Button_Click" Margin="69,0,67,0"/>
         </StackPanel>
 
 
