@@ -98,10 +98,11 @@
             <Button  Content="+" Height="50" Width="59" Click="Button_Click"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,470,0,0" HorizontalAlignment="Left" Width="595" Background="BurlyWood" Grid.ColumnSpan="2">
-            <TextBox  x:Name="vpr" Width="170" Margin="0,0,20,0">
+
+            <TextBox  x:Name="vpr" Width="170" Margin="0,0,20,0" TextWrapping="Wrap">
 
             </TextBox>
-            <TextBox x:Name="otv" Margin="0,0,40,0" Width="160"/>
+            <TextBox x:Name="otv" Margin="0,0,40,0" Width="160" TextWrapping="Wrap"/>
             <Button Width="75" Margin="0,75,0,46" Click="Button_Click_2"/>
 
 
@@ -111,9 +112,9 @@
                 <ListBox Height="246" Width="195" x:Name="list2"  SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Right" HorizontalContentAlignment="Left"  SelectionMode="Multiple">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <StackPanel MaxHeight="50" MaxWidth="50">
-                                <TextBlock Height="15" Width="15" Text="{Binding Name}"/>
-                                <TextBlock Height="15" Width="15"  Text="{Binding Point}"/>
+                            <StackPanel MaxHeight="50" MaxWidth="400">
+                                <TextBlock Height="15" Width="800" Text="{Binding Name}"/>
+                                <TextBlock Height="15" Width="800"  Text="{Binding Point}"/>
 
 
                             </StackPanel>
