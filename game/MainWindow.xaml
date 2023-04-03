@@ -68,6 +68,7 @@
             <Button Content="500" Height="65" Width="75"/>
             <TextBlock Text="Вопрос" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
             <TextBlock Text="Ответ" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
+            <TextBlock Text="Проверка" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
 
         </WrapPanel>
         <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="616">
@@ -100,7 +101,8 @@
             <TextBox  x:Name="vpr" Width="170" Margin="0,0,20,0">
 
             </TextBox>
-            <TextBox x:Name="otv" Width="160"/>
+            <TextBox x:Name="otv" Margin="0,0,40,0" Width="160"/>
+            <Button Width="75" Margin="0,75,0,46" Click="Button_Click_2"/>
 
 
         </StackPanel>

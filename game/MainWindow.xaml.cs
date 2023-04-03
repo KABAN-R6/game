@@ -50,6 +50,7 @@ namespace game
         }
         public void Update()
         {
+            
             players = players.ToList();
             list2.ItemsSource = players;
             
@@ -77,33 +78,56 @@ namespace game
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
            b1.Visibility = Visibility.Collapsed;
-            
+            vpr.Text = "123123";
            
         }
 
         private void b2_Click(object sender, RoutedEventArgs e)
         {
             b2.Visibility = Visibility.Collapsed;
+            vpr.Text = "123123";
         }
 
         private void b3_Click(object sender, RoutedEventArgs e)
         {
             b3.Visibility = Visibility.Collapsed;
+            vpr.Text = "123123";
         }
 
         private void b4_Click(object sender, RoutedEventArgs e)
         {
             b4.Visibility = Visibility.Collapsed;
+            vpr.Text = "123123";
         }
 
         private void b5_Click(object sender, RoutedEventArgs e)
         {
             b5.Visibility = Visibility.Collapsed;
+            vpr.Text = "123123";
         }
 
         private void vpr_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            if (otv.Text == "1")
+            {
+                if (list2.SelectedItem == null)
+                {
+                    MessageBox.Show("Выберети пользователя");
+                }
+               
+                var b = players.FindIndex(u => u == list2.SelectedItem);
+                players[b].Point = 100;
+
+                Update();
+
+
+            }
+            Update();
         }
     }
 }
