@@ -10,9 +10,10 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="155*"/>
-            <ColumnDefinition Width="637*"/>
+            <ColumnDefinition Width="560*"/>
+            <ColumnDefinition Width="77*"/>
         </Grid.ColumnDefinitions>
-        <WrapPanel Background="BurlyWood" Grid.ColumnSpan="2" Margin="0,0,187,334">
+        <WrapPanel Background="BurlyWood" Grid.ColumnSpan="2" Margin="0,0,110,334">
             <TextBlock Text="Miss"  Width="195" Height="60" FontSize="20" >
 
             </TextBlock>
@@ -23,7 +24,7 @@
             <Button x:Name="b5" Content="500" Height="65" Width="75" Click="b5_Click"/>
         </WrapPanel>
         <Border></Border>
-        <WrapPanel Margin="0,70,187,456" Background="BurlyWood" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,70,110,456" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock Text="Words from planets"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -32,7 +33,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,140,187,194" Background="BurlyWood" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,140,110,194" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock  Text="The Knights templar"  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -41,7 +42,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,210,187,194" Background="BurlyWood" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,210,110,194" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock Text="BIOLOGY"  Width="195" Height="63" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -50,7 +51,7 @@
             <Button Content="500" Height="65" Width="75"/>
 
         </WrapPanel>
-        <WrapPanel Margin="0,280,187,259" Background="BurlyWood" Grid.ColumnSpan="2">
+        <WrapPanel Margin="0,280,110,259" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock Text="MAKE IT SO "  Width="195" Height="60" FontSize="20" />
             <Button Content="100" Height="65" Width="75"/>
             <Button Content="200" Height="65" Width="75"/>
@@ -71,43 +72,22 @@
             <TextBlock Text="Проверка" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
 
         </WrapPanel>
-        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="616">
-            <WrapPanel Height="275">
-                <ListBox Height="270" Width="195" x:Name="list1"  SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Right" HorizontalContentAlignment="Left"  SelectionMode="Multiple">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel MaxHeight="50" MaxWidth="50">
-                                <TextBlock Height="15" Width="15" Text="{Binding Name}"/>
-                                <TextBlock Height="15" Width="15"  Text="{Binding Point}"/>
 
-
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-            </WrapPanel>
-
-
-
-
-
-
-
-
-            <TextBox x:Name="tx1" Height="65" TextChanged="tx1_TextChanged"/>
-            <Button  Content="+" Height="50" Width="59" Click="Button_Click"/>
-        </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,470,0,0" HorizontalAlignment="Left" Width="595" Background="BurlyWood" Grid.ColumnSpan="2">
 
             <TextBox  x:Name="vpr" Width="170" Margin="0,0,20,0" TextWrapping="Wrap">
 
             </TextBox>
             <TextBox x:Name="otv" Margin="0,0,40,0" Width="160" TextWrapping="Wrap"/>
-            <Button Width="75" Margin="0,75,0,46" Click="Button_Click_2"/>
+            <Button Width="75" Margin="0,75,0,46" Click="Button_Click_2">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FF9C4C4C"/>
+                </Button.Effect>
+            </Button>
 
 
         </StackPanel>
-        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="661">
+        <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="661" Grid.ColumnSpan="2">
             <WrapPanel Height="275">
                 <ListBox Height="246" Width="195" x:Name="list2"  SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Right" HorizontalContentAlignment="Left"  SelectionMode="Multiple">
                     <ListBox.ItemTemplate>
@@ -121,6 +101,7 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
+
             </WrapPanel>
 
 
@@ -130,8 +111,15 @@
 
 
 
-            <TextBox x:Name="tx2" Height="65" TextChanged="tx1_TextChanged"/>
+            <TextBox x:Name="tx2" Height="65" TextChanged="tx2_TextChanged"/>
             <Button  Content="+" Height="50" Click="Button_Click" Margin="69,0,67,0"/>
+            <WrapPanel Height="175" Background="Bisque">
+                <TextBlock Text="Ледирует" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
+                <ListBox x:Name="tx" Height="85" Width="160" SelectionChanged="tx_SelectionChanged">
+                    
+                </ListBox>
+            </WrapPanel>
+
         </StackPanel>
 
 
