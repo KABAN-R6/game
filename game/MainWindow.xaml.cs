@@ -90,15 +90,7 @@ namespace game
         {
 
 
-            if (tx2.Text == null || tx2.Text == "")
-            {
-                MessageBox.Show("21312");
-            }
-            else
-            {
-                players.Add(new player(tx2.Text, 0));
-                Update();
-            }
+            
 
 
 
@@ -227,7 +219,7 @@ namespace game
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b6.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[6].question;
             a = quuestions[6].answer;
             v = quuestions[6].Point;
@@ -235,7 +227,7 @@ namespace game
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b7.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[7].question;
             a = quuestions[7].answer;
             v = quuestions[7].Point;
@@ -243,7 +235,7 @@ namespace game
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b8.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[8].question;
             a = quuestions[8].answer;
             v = quuestions[8].Point;
@@ -251,7 +243,7 @@ namespace game
 
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b9.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[9].question;
             a = quuestions[9].answer;
             v = quuestions[9].Point-100;
@@ -260,7 +252,7 @@ namespace game
 
         private void Button_Click_9(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b10.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[10].question;
             a = quuestions[10].answer;
             v = quuestions[10].Point;
@@ -268,7 +260,7 @@ namespace game
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b11.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[11].question;
             a = quuestions[11].answer;
             v = quuestions[11].Point;
@@ -276,7 +268,7 @@ namespace game
 
         private void Button_Click_11(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b12.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[12].question;
             a = quuestions[12].answer;
             v = quuestions[12].Point *10 ;
@@ -285,7 +277,7 @@ namespace game
 
         private void Button_Click_12(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b13.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[13].question;
             a = quuestions[13].answer;
             v = quuestions[13].Point;
@@ -293,7 +285,7 @@ namespace game
 
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b14.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[14].question;
             a = quuestions[14].answer;
             v = quuestions[14].Point;
@@ -301,7 +293,7 @@ namespace game
 
         private void Button_Click_14(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b15.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[15].question;
             a = quuestions[15].answer;
             v = quuestions[15].Point -1000;
@@ -310,7 +302,7 @@ namespace game
 
         private void Button_Click_15(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b16.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[16].question;
             a = quuestions[16].answer;
             v = quuestions[16].Point;
@@ -318,7 +310,7 @@ namespace game
 
         private void Button_Click_16(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b17.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[17].question;
             a = quuestions[17].answer;
             v = quuestions[17].Point;
@@ -326,7 +318,7 @@ namespace game
 
         private void Button_Click_17(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b18.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[18].question;
             a = quuestions[18].answer;
             v = quuestions[18].Point;
@@ -334,7 +326,7 @@ namespace game
 
         private void Button_Click_18(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b19.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[19].question;
             a = quuestions[19].answer;
             v = quuestions[19].Point;
@@ -342,7 +334,7 @@ namespace game
 
         private void Button_Click_19(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b20.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[20].question;
             a = quuestions[20].answer;
             v = quuestions[20].Point;
@@ -350,7 +342,7 @@ namespace game
 
         private void Button_Click_20(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b21.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[21].question;
             a = quuestions[21].answer;
             v = quuestions[21].Point;
@@ -358,7 +350,7 @@ namespace game
 
         private void Button_Click_21(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b22.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[22].question;
             a = quuestions[22].answer;
             v = quuestions[22].Point;
@@ -366,7 +358,7 @@ namespace game
 
         private void Button_Click_22(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b23.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[23].question;
             a = quuestions[23].answer;
             v = quuestions[23].Point;
@@ -374,7 +366,7 @@ namespace game
 
         private void Button_Click_23(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b24.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[24].question;
             a = quuestions[24].answer;
             v = quuestions[24].Point;
@@ -382,7 +374,7 @@ namespace game
 
         private void Button_Click_24(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b25.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[25].question;
             a = quuestions[25].answer;
             v = quuestions[25].Point;
@@ -390,7 +382,7 @@ namespace game
 
         private void Button_Click_25(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b26.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[26].question;
             a = quuestions[26].answer;
             v = quuestions[26].Point;
@@ -398,7 +390,7 @@ namespace game
 
         private void Button_Click_26(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b27.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[27].question;
             a = quuestions[27].answer;
             v = quuestions[27].Point;
@@ -406,7 +398,7 @@ namespace game
 
         private void Button_Click_27(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b28.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[28].question;
             a = quuestions[28].answer;
             v = quuestions[28].Point;
@@ -414,10 +406,23 @@ namespace game
 
         private void Button_Click_28(object sender, RoutedEventArgs e)
         {
-            b5.Visibility = Visibility.Collapsed;
+            b29.Visibility = Visibility.Collapsed;
             vpr.Text = quuestions[29].question;
             a = quuestions[29].answer;
             v = quuestions[29].Point;
+        }
+
+        private void Button_Click_29(object sender, RoutedEventArgs e)
+        {
+            if (tx2.Text == null || tx2.Text == "")
+            {
+                MessageBox.Show("21312");
+            }
+            else
+            {
+                players.Add(new player(tx2.Text, 0));
+                Update();
+            }
         }
     }
 }
