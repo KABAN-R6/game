@@ -89,7 +89,7 @@
         </StackPanel>
         <StackPanel VerticalAlignment="Center" Background="Bisque" Grid.Column="1" Margin="440,0,0,0" Height="661" Grid.ColumnSpan="2">
             <WrapPanel Height="275">
-                <ListBox Height="246" Width="195" x:Name="list2"  SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Right" HorizontalContentAlignment="Left"  SelectionMode="Multiple">
+                <ListBox Height="246" Width="195" x:Name="list2"  SelectionChanged="list1_SelectionChanged" HorizontalAlignment="Right" HorizontalContentAlignment="Left"  SelectionMode="Single">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel MaxHeight="50" MaxWidth="400">
@@ -114,8 +114,7 @@
             <TextBox x:Name="tx2" Height="65" TextChanged="tx2_TextChanged" Margin="0,0,0,20"/>
             <Button Content="+" Height="45" Margin="65,0,67,0" Click="Button_Click_29"/>
             <WrapPanel Height="155" Background="Bisque" HorizontalAlignment="Center" Margin="0,0,0,0"/>
-            <TextBox Height="58" TextWrapping="Wrap" Margin="0,0,0,10"/>
-            <Button Content="Button" Click="Button_Click_30"/>
+            <Button Content="Top" Click="Button_Click_30" Height="55"/>
 
         </StackPanel>
 

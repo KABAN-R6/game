@@ -152,31 +152,44 @@ namespace game
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (otv.Text == a)
+            try
             {
-                if (list2.SelectedItem == null)
+                if (otv.Text == a)
                 {
-                    MessageBox.Show("Выберети пользователя");
+                    if (list2.SelectedItem == null)
+                    {
+                       
+
+
+
+
+                    }
+
+                    int d = 0;
+                    int c = v;
+                    var b = players.FindIndex(u => u == list2.SelectedItem);
+                    players[b].Point = players[b].Point + c;
+
+
+                    Update();
+
+
+
+
 
                 }
 
-                int d = 0;
-                int c = v;
-                var b = players.FindIndex(u => u == list2.SelectedItem);
-                players[b].Point = players[b].Point + c;
-               
-
+                vpr.Text = "";
+                otv.Text = "";
                 Update();
-
-
-
-
-
             }
-
-            vpr.Text = "";
-            otv.Text = "";
-            Update();
+            catch (System.Exception)
+            {
+                otv.Text = "";
+                vpr.Text = "";
+                MessageBox.Show("Выберети пользователя");
+            }
+            
 
 
 
@@ -426,6 +439,16 @@ namespace game
         }
 
         private void Button_Click_30(object sender, RoutedEventArgs e)
+        {
+            player player1 = players[0];
+            foreach (var a in players)
+            {
+                if (player1.Point < a.Point) player1 = a;
+            }
+            MessageBox.Show(player1.Name,"Победитель");
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             
         }
