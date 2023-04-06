@@ -113,7 +113,9 @@
 
             <TextBox x:Name="tx2" Height="65" TextChanged="tx2_TextChanged" Margin="0,0,0,20"/>
             <Button Content="+" Height="45" Margin="65,0,67,0" Click="Button_Click_29"/>
-            <WrapPanel Height="155" Background="Bisque" HorizontalAlignment="Center" Margin="19,0"/>
+            <WrapPanel Height="155" Background="Bisque" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <TextBox Height="58" TextWrapping="Wrap" Margin="0,0,0,10"/>
+            <Button Content="Button" Click="Button_Click_30"/>
 
         </StackPanel>
 

@@ -424,5 +424,10 @@ namespace game
                 Update();
             }
         }
+
+        private void Button_Click_30(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
