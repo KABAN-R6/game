@@ -26,47 +26,47 @@
         <Border></Border>
         <WrapPanel Margin="0,70,110,456" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock Text="Words from planets"  Width="195" Height="60" FontSize="20" />
-            <Button Content="100" Height="65" Width="75"/>
-            <Button Content="200" Height="65" Width="75"/>
-            <Button Content="300" Height="65" Width="75"/>
-            <Button Content="400" Height="65" Width="75"/>
-            <Button Content="500" Height="65" Width="75"/>
+            <Button Content="100" Height="65" Width="75" Click="Button_Click_4"/>
+            <Button Content="200" Height="65" Width="75" Click="Button_Click_5"/>
+            <Button Content="300" Height="65" Width="75" Click="Button_Click_6"/>
+            <Button Content="400" Height="65" Width="75" Click="Button_Click_7"/>
+            <Button Content="500" Height="65" Width="75" Click="Button_Click_8"/>
 
         </WrapPanel>
         <WrapPanel Margin="0,140,110,194" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock  Text="The Knights templar"  Width="195" Height="60" FontSize="20" />
-            <Button Content="100" Height="65" Width="75"/>
-            <Button Content="200" Height="65" Width="75"/>
-            <Button Content="300" Height="65" Width="75"/>
-            <Button Content="400" Height="65" Width="75"/>
-            <Button Content="500" Height="65" Width="75"/>
+            <Button Content="100" Height="65" Width="75" Click="Button_Click_9"/>
+            <Button Content="200" Height="65" Width="75" Click="Button_Click_10"/>
+            <Button Content="300" Height="65" Width="75" Click="Button_Click_11"/>
+            <Button Content="400" Height="65" Width="75" Click="Button_Click_12"/>
+            <Button Content="500" Height="65" Width="75" Click="Button_Click_13"/>
 
         </WrapPanel>
         <WrapPanel Margin="0,210,110,194" Background="BurlyWood" Grid.ColumnSpan="2">
             <TextBlock Text="BIOLOGY"  Width="195" Height="63" FontSize="20" />
-            <Button Content="100" Height="65" Width="75"/>
-            <Button Content="200" Height="65" Width="75"/>
-            <Button Content="300" Height="65" Width="75"/>
-            <Button Content="400" Height="65" Width="75"/>
-            <Button Content="500" Height="65" Width="75"/>
+            <Button Content="100" Height="65" Width="75" Click="Button_Click_14"/>
+            <Button Content="200" Height="65" Width="75" Click="Button_Click_15"/>
+            <Button Content="300" Height="65" Width="75" Click="Button_Click_16"/>
+            <Button Content="400" Height="65" Width="75" Click="Button_Click_17"/>
+            <Button Content="500" Height="65" Width="75" Click="Button_Click_18"/>
 
         </WrapPanel>
         <WrapPanel Margin="0,280,110,259" Background="BurlyWood" Grid.ColumnSpan="2">
-            <TextBlock Text="MAKE IT SO "  Width="195" Height="60" FontSize="20" />
-            <Button Content="100" Height="65" Width="75"/>
-            <Button Content="200" Height="65" Width="75"/>
-            <Button Content="300" Height="65" Width="75"/>
-            <Button Content="400" Height="65" Width="75"/>
-            <Button Content="500" Height="65" Width="75"/>
+            <TextBlock Text="Work and creativity "  Width="195" Height="60" FontSize="20" />
+            <Button Content="100" Height="65" Width="75" Click="Button_Click_19"/>
+            <Button Content="200" Height="65" Width="75" Click="Button_Click_20"/>
+            <Button Content="300" Height="65" Width="75" Click="Button_Click_21"/>
+            <Button Content="400" Height="65" Width="75" Click="Button_Click_22"/>
+            <Button Content="500" Height="65" Width="75" Click="Button_Click_23"/>
 
         </WrapPanel>
         <WrapPanel Margin="0,350,0,146" Background="BurlyWood" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="605">
             <TextBlock Text="STEINBECK"  Width="195" Height="60" FontSize="20" />
-            <Button Content="100" Height="65" Width="75"/>
-            <Button Content="200" Height="65" Width="75"/>
-            <Button Content="300" Height="65" Width="75"/>
-            <Button Content="400" Height="65" Width="75"/>
-            <Button Content="500" Height="65" Width="75"/>
+            <Button Content="100" Height="65" Width="75" Click="Button_Click_24"/>
+            <Button Content="200" Height="65" Width="75" Click="Button_Click_25"/>
+            <Button Content="300" Height="65" Width="75" Click="Button_Click_26"/>
+            <Button Content="400" Height="65" Width="75" Click="Button_Click_27"/>
+            <Button Content="500" Height="65" Width="75" Click="Button_Click_28"/>
             <TextBlock Text="Вопрос" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
             <TextBlock Text="Ответ" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
             <TextBlock Text="Проверка" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
@@ -79,7 +79,7 @@
 
             </TextBox>
             <TextBox x:Name="otv" Margin="0,0,40,0" Width="160" TextWrapping="Wrap"/>
-            <Button Width="75" Margin="0,75,0,46" Click="Button_Click_2">
+            <Button Content="?" Width="75" Margin="0,75,0,46" Click="Button_Click_2">
                 <Button.Effect>
                     <DropShadowEffect Color="#FF9C4C4C"/>
                 </Button.Effect>
@@ -112,13 +112,7 @@
 
 
             <TextBox x:Name="tx2" Height="65" TextChanged="tx2_TextChanged"/>
-            <Button  Content="+" Height="50" Click="Button_Click" Margin="69,0,67,0"/>
-            <WrapPanel Height="175" Background="Bisque">
-                <TextBlock Text="Ледирует" Margin="0,20,0,0" Width="195" Height="35" FontSize="20" />
-                <ListBox x:Name="tx" Height="85" Width="160" SelectionChanged="tx_SelectionChanged">
-                    
-                </ListBox>
-            </WrapPanel>
+            <WrapPanel Height="155" Background="Bisque" HorizontalAlignment="Center" Margin="19,0"/>
 
         </StackPanel>
 
